@@ -25,12 +25,11 @@
 }
 
 .logo-container {
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     width: 80px;
     border-radius: 15px;
-    margin: 0 auto; /* This centers the container */
+    margin: 0 auto; /*center*/
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: your-color; /* Add your desired background color */
 }
