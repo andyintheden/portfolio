@@ -1,0 +1,36 @@
+.avatar {
+    border-radius: 9px;
+    object-fit: cover;
+    max-width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+#scrollspyheading1 {
+    margin-top: 100px;
+}
+.logo {
+    width: 80px;
+    border-radius: 20px;
+}
+.custom-container {
+    max-width: 700px;
+    border-radius: 9px;
+}
+.skillscontainer {
+    background-color: rgb(233, 240, 250);
+    border-radius: 15px;
+}
+
+.desaturated {
+    filter: grayscale(100%);
+}
+
+.logo-container {
+    background-color: blue;
+    width: 80px;
+    border-radius: 15px;
+    margin: 0 auto; /* This centers the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: your-color; /* Add your desired background color */
+}
