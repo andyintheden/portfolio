@@ -27,9 +27,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#scrollspyheading4">Kontakt</a>
                 </li>
+                <!--
                 <li class="nav-item">
                     <a class="nav-link" href="#">EN</a>
-                </li>
+                </li> -->
             </ul>
 
         </nav></div>
@@ -103,7 +104,7 @@
         <p class="text-center">Bootstrap</p>
     </div>
  </div>
- <a href="#" class="btn mt-4 mb-5 btn-primary custom-btn float-start" onclick="openPopup('popup1')">Zertifikate</a>
+ <a href="#" class="btn mt-4 mb-5 btn-primary custom-btn float-start" onclick="openPopup('popup1',event)">Zertifikate</a>
     </div>
 </div>
 </div>
@@ -114,7 +115,7 @@
     <h1 class="text-center mb-5">Projekte</h1>
     <div class="row">
         <!-- Card 1 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-6 col-md-4 mb-4">
             <div class="card h-100">
                 <img src="card1.jpg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column">
@@ -125,7 +126,7 @@
               </div>
         </div>
         <!-- Card 2 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-6 col-md-4 mb-4">
             <div class="card h-100">
                 <img src="card1.jpg" class="card-img-top desaturated" alt="...">
                 <div class="card-body d-flex flex-column">
@@ -136,9 +137,9 @@
               </div>
         </div>
         <!-- Card 3 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-6 col-md-4 mb-4">
             <div class="card h-100">
-                <img src="card1.jpg" class="card-img-top desaturated" alt="...">
+                <img src="A2D22164-1A08-4104-8890-AA61883A3DE2_1_201_a.jpeg" class="card-img-top desaturated" alt="...">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Projekt</h5>
                   <p class="card-text">Bald verfügbar</p>
@@ -155,7 +156,7 @@
 <!--Contact-->
 <div class="container-fluid contact" id="scrollspyheading4">
 <div class="contact" style="height: 100px;"></div> <!--Spacer-->
-<div class="container-fluid contact">
+<div class="container-fluid custom-container contact">
 <h1 class="text-center contact">Kontakt</h1>
 
 <!--<a class="icon-link text-center mb-4" href="#">
@@ -196,52 +197,95 @@
         required></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Senden</button>
+    <button type="button" class="btn ms-auto btn-link fw-bold text-dark text-decoration-none" onclick="openPopup('popup2',event)">Datenschutzerklärung</button>
   </form>
 </div>
 <div class="contact" style="height: 100px;"></div> <!--Spacer-->
 
-<!--popup-->
+<!--popups-->
 
 <div id="popup1" class="popup-overlay">
     <div class="popup-content">
-        <button class="btn close-Button" onclick="closePopup(popup1)">&times</button>
+        <button class="btn close-Button" onclick="closePopup('popup1',event)">&times</button>
         <div class="row">
             <!-- Card 1 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-6 col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="card1.jpg" class="card-img-top" alt="...">
+                    <img src="Coursera 37NZMDOXR29B.jpg" class="card-img-top" alt="...">
                     <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Little Lemon Restaurant</h5>
-                      <p class="card-text">dieses Projekt wird bald verfügbar</p>
-                      <a href="#" class="btn btn-primary mt-auto text-start" style="width: auto; align-self: flex-start;">GitHub</a>
+                      <h5 class="card-title">JavaScript</h5>
+                      <p class="card-text">Datenstrukturen, Module, NodeJS, TDD, OOP</p>
+                      <a href="https://coursera.org/verify/37NZMDOXR29B" class="btn btn-primary mt-auto text-start" style="width: auto; align-self: flex-start;">Verifizieren</a>
                     </div>
                   </div>
             </div>
             <!-- Card 2 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-6 col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="card1.jpg" class="card-img-top desaturated" alt="...">
+                    <img src="Coursera 48H6D3HF5L4X.jpg" class="card-img-top" alt="...">
                     <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">CRUD App</h5>
-                      <p class="card-text">Bald verfügbar</p>
-                      <a href="#" class="btn btn-primary disabled mt-auto text-start" style="width: auto; align-self: flex-start;">GitHub</a>
+                      <h5 class="card-title">Grundlagen Front End Development</h5>
+                      <p class="card-text">HTML, CSS, JavaScript, Bootstrap, Responsive Design</p>
+                      <a href="https://coursera.org/verify/48H6D3HF5L4X" class="btn btn-primary mt-auto text-start" style="width: auto; align-self: flex-start;">Verifizieren</a>
                     </div>
                   </div>
             </div>
             <!-- Card 3 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-6 col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="card1.jpg" class="card-img-top desaturated" alt="...">
+                    <img src="A2D22164-1A08-4104-8890-AA61883A3DE2_1_201_a.jpeg" class="card-img-top desaturated" alt="...">
                     <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Projekt</h5>
-                      <p class="card-text">Bald verfügbar</p>
-                      <a href="#" class="btn btn-primary disabled mt-auto text-start" style="width: auto; align-self: flex-start;">GitHub</a>
+                      <h5 class="card-title">Kontinuierliche Entwicklung</h5>
+                      <p class="card-text">weitere Zertifikate folgen</p>
+                     <!-- <a href="#" class="btn btn-primary disabled mt-auto text-start" style="width: auto; align-self: flex-start;">GitHub</a> -->
                     </div>
                   </div>
             </div>
         </div>    
     </div>
 </div>
+
+
+<div id="popup2" class="popup-overlay">
+    <div class="popup-content">
+        <button class="btn close-Button" onclick="closePopup('popup2',event)">&times</button>
+    <h1>Datenschutzerklärung</h1>
+    
+    <h2>1. Verantwortlicher</h2>
+    <p>Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website:</p>
+    <p><strong>Andreas Helfricht</strong><br>
+    E-Mail: <a href="mailto:andreas.helfricht@outlook.com">andreas.helfricht@outlook.com</a></p>
+    
+    <h2>2. Hosting & Zugriffsdaten (GitHub Pages)</h2>
+    <p>Diese Website wird über <strong>GitHub Pages</strong> gehostet, einem Dienst der GitHub, Inc. (88 Colin P. Kelly Jr St, San Francisco, CA 94107, USA). Beim Aufruf der Website speichert GitHub automatisch folgende Daten in Logfiles:</p>
+    <ul>
+        <li>IP-Adresse des Besuchers</li>
+        <li>Datum und Uhrzeit des Zugriffs</li>
+        <li>Verwendeter Browser und Betriebssystem</li>
+    </ul>
+    <p>Diese Daten dienen ausschließlich der technischen Bereitstellung der Website. Weitere Informationen findest du in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">Datenschutzerklärung von GitHub</a>.</p>
+    
+    <h2>3. Kontaktformular (Formspree)</h2>
+    <p>Wenn du das Kontaktformular auf dieser Website nutzt, werden die eingegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht) an <strong>Formspree, Inc.</strong> (San Francisco, USA) weitergeleitet und per E-Mail empfangen.</p>
+    <p>Die übermittelten Daten werden nur zur Beantwortung deiner Anfrage genutzt und nicht an Dritte weitergegeben. Weitere Informationen findest du in der <a href="https://formspree.io/legal/privacy-policy/" target="_blank">Datenschutzerklärung von Formspree</a>.</p>
+    
+    <h2>4. Deine Rechte als Nutzer</h2>
+    <p>Du hast nach der DSGVO folgende Rechte:</p>
+    <ul>
+        <li>Auskunft über gespeicherte Daten (Art. 15 DSGVO)</li>
+        <li>Berichtigung falscher Daten (Art. 16 DSGVO)</li>
+        <li>Löschung deiner Daten (Art. 17 DSGVO)</li>
+        <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+        <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+    </ul>
+    <p>Anfragen dazu kannst du an <a href="mailto:andreas.helfricht@outlook.com">andreas.helfricht@outlook.com</a> richten.</p>
+    
+    <h2>5. Änderungen der Datenschutzerklärung</h2>
+    <p>Ich behalte mir vor, diese Datenschutzerklärung zu aktualisieren, falls sich technische oder gesetzliche Änderungen ergeben.</p>
+    </div>
+</div>
+   
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="popup.js"></script>

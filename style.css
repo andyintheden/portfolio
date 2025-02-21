@@ -1,22 +1,21 @@
 .avatar {
-    border-radius: 9px;
+    border-radius: 12px;
     object-fit: cover;
-    max-width: 200px;
+    max-width: 220px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-#scrollspyheading1 {
-    margin-top: 100px;
-}
+
 .logo {
     width: 80px;
     border-radius: 20px;
 }
 .custom-container {
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 9px;
+    background-color: #8ecae6;
 }
 .skillscontainer {
-    background-color: rgb(233, 240, 250);
+    background-color: #8ecae6;
     border-radius: 15px;
 }
 
@@ -35,23 +34,97 @@
 }
 
 .bio {
-    height: 100vh;
+    min-height: 28rem;
     display: flex;
     align-items: center;
 }
 
 .skills1 {
-    background-color: rgb(233, 240, 250);
-    width: 100vw;
-    position: relative;
-
-}
-
-.test1{
-    background-color: brown;
-    padding: 0;
+    background-color: #8ecae6;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
+    padding: 0;
+    padding-top: 2rem;
+    min-height: 600px;
 }
+
+.test1.container-fluid{
+    width: 100vw;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #023047 !important;
+    border-color: #023047 !important;
+}
+
+.nav-pills > li > a.active {
+    background-color: #023047 !important;
+}
+
+.contact {
+    background-color: #8ecae6;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0) !important;
+ }
+
+.nav-link.active {
+    color: white !important;
+  }
+
+h1 {
+    font-weight: 600 !important;
+}
+
+.customspacer {
+    margin-top: 40px;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    max-height: 80vh;
+    max-width: 820px;
+    background-color: white;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    padding: 60px 20px 20px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+.close-Button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
