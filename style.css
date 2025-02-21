@@ -33,3 +33,25 @@
     justify-content: center;
     align-items: center;
 }
+
+.bio {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.skills1 {
+    background-color: rgb(233, 240, 250);
+    width: 100vw;
+    position: relative;
+
+}
+
+.test1{
+    background-color: brown;
+    padding: 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+}
